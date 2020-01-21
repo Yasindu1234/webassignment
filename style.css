@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* navigation bar */
+.container {
+    clear:both;
+    overflow:hidden;
+}
+  
+.topnav {
+    float:right;
+}
+  
+.logo img {
+    float:left;
+}
+  
+.topnav a{
+    color: whitesmoke;
+    display: inline-block; 
+    padding:10px;
+    font-size:20px; 
+    text-decoration: none;
+}
+  
+.topnav a:hover {
+    color: dodgerblue;
+}
+
+/* slideshow images*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+.mySlides {
+    display: none;
+}
+  
+   /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+    /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+    /* Fading animation-slideshow */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Gallery */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+  
+h1 {
+    font-size: 40px;
+    word-break: break-all;
+    text-align: center;
+}
+  
+.row {
+    margin: 8px -16px;
+}
+  
+.row,
+.row > .column {
+    padding: 8px;
+}
+  
+.column {
+    float: left;
+    width: 25%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* About */
+.about-section {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 4px;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+.column::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Contact */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=tel]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: rgb(48, 105, 228);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #1c60e0;
+}
+  
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+
+/* Back to top btn */
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 0, 0, 0.89);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+  
+/* Footer */
+footer {
+    padding: 5;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color:#262626;
+    color: white;
+    text-align: center;
+  }
